@@ -35,10 +35,10 @@ export const metadata: Metadata = {
     title: 'Ayyan Saddiqui | Senior Software Engineer',
     description: 'Senior Software Engineer specializing in Python, Odoo ERP, and AI-powered business automation.',
   },
-  robots: {
-    index: true,
-    follow: true,
-  },
+  // robots: {
+  //   index: true,
+  //   follow: true,
+  // },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
