@@ -14,7 +14,7 @@ export default function Footer() {
   return (
     <footer className="py-32 border-t border-border-subtle bg-[#050505] overflow-hidden" id="connect">
       <div className="max-w-7xl mx-auto px-6 md:px-10 grid grid-cols-1 md:grid-cols-12 gap-16">
-        <div className="md:col-span-4 foot-md">
+        <div className="md:col-span-4">
           <div className="text-4xl font-black tracking-tighter text-white uppercase mb-10">
             Ayyan<span className="text-accent">.</span>Saddiqui
           </div>

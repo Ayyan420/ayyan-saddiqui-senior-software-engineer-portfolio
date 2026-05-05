@@ -3,58 +3,48 @@
 @custom-variant hover (&:hover);
 
 @theme {
-    --font-sans: var(--font-sans);
-    --font-mono: var(--font-mono);
-
-    --color-accent: #ff4e00;
-    --color-bg-deep: #050505;
-    --color-border-subtle: #222222;
-    --color-card-bg: #0a0a0a;
-    --color-card-border: #1a1a1a;
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-mono);
+  
+  --color-accent: #ff4e00;
+  --color-bg-deep: #050505;
+  --color-border-subtle: #222222;
+  --color-card-bg: #0a0a0a;
+  --color-card-border: #1a1a1a;
 }
 
 @layer base {
-    html {
-        scroll-behavior: smooth;
-    }
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-bg-deep text-white antialiased;
+  }
 
-    body {
-        @apply bg-bg-deep text-white antialiased;
-    }
-
-    ::selection {
-        @apply bg-accent text-white;
-    }
-}
-
-.foot-md {
-    padding-left: 30px;
-}
-
-@media only screen and (max-width:991px) {
-    .foot-md {
-        padding-left: 0px;
-    }
+  ::selection {
+    @apply bg-accent text-white;
+  }
 }
 
 @layer utilities {
-    .editorial-header {
-        @apply text-5xl md: text-7xl lg:text-[92px] leading-[0.85] font-black tracking-[-0.04em] uppercase;
-    }
+  .editorial-header {
+    @apply text-5xl md:text-7xl lg:text-[92px] leading-[0.85] font-black tracking-[-0.04em] uppercase;
+  }
+  
+  .editorial-label {
+    @apply text-[10px] font-bold tracking-[0.2em] uppercase text-gray-500;
+  }
+  
+  .editorial-card {
+    @apply bg-[#0a0a0a] border border-[#1a1a1a] p-8 hover:border-accent transition-colors duration-300;
+  }
 
-    .editorial-label {
-        @apply text-[10px] font-bold tracking-[0.2em] uppercase text-gray-500;
-    }
+  .stat-val {
+    @apply text-2xl font-light text-white;
+  }
 
-    .editorial-card {
-        @apply bg-[#0a0a0a] border border-[#1a1a1a] p-8 hover: border-accent transition-colors duration-300;
-    }
-
-    .stat-val {
-        @apply text-2xl font-light text-white;
-    }
-
-    .stat-lbl {
-        @apply text-[10px] uppercase text-[#555] tracking-widest font-bold;
-    }
+  .stat-lbl {
+    @apply text-[10px] uppercase text-[#555] tracking-widest font-bold;
+  }
 }
