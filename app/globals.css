@@ -14,6 +14,17 @@
 }
 
 @layer base {
+  
+  .foot-md {
+      padding-left: 30px;
+  }
+
+  @media only screen and (max-width:991px) {
+      .foot-md {
+          padding-left: 0px;
+      }
+  }
+
   html {
     scroll-behavior: smooth;
   }
