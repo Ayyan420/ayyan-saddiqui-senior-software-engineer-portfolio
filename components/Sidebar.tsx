@@ -24,6 +24,9 @@ const iconItems = [
   { icon: Mail, label: 'Contact', href: '#connect' },
 ];
 
+const basePath = '/ayyan-saddiqui-senior-software-engineer-portfolio';
+
+
 export default function Sidebar() {
   return (
     <aside className="hidden xl:flex fixed left-0 top-1/2 -translate-y-1/2 z-[90] flex-col gap-6">
@@ -54,7 +57,8 @@ export default function Sidebar() {
         <div className="h-20 w-px bg-border-subtle" />
 
         <motion.a
-          href="/Ayyan_Saddiqui_Software_engineer_CV.pdf" 
+  href={`${basePath}/Ayyan_Saddiqui_Software_engineer_CV.pdf`}
+
           download
           whileHover={{ color: '#ff4e00' }}
           className="text-gray-700 transition-colors"
