@@ -23,8 +23,8 @@
       .foot-md {
           padding-left: 0px;
       }
-      .sm:text-7xl{
-        font-size: 2.4rem;
+      .text-6xl{
+        font-size: 2.4rem !important;
       }
   }
 
