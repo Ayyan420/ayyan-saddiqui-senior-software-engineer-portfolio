@@ -11,6 +11,7 @@
   --color-border-subtle: #222222;
   --color-card-bg: #0a0a0a;
   --color-card-border: #1a1a1a;
+  --text-7xl: 3.5rem;
 }
 
 @layer base {
